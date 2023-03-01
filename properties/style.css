@@ -1,0 +1,312 @@
+*{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body{
+	font-size: 15px;
+}
+.container{
+	width: 95%;
+	max-width: 1200px;
+	margin: auto;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+header .menu{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+header .menu img{
+	width: 100%;
+}
+header h1{
+	font-size: 24px;
+	font-weight: lighter;
+}
+header h1 a{
+	color: black;
+}
+
+
+ section .gallery{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+}
+.img_gallery{
+	display: grid;
+	margin-top: 25px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+ .card{
+	max-height: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.img{
+	max-width: 100%;
+	max-height: 400px;
+
+}
+.image img{
+	width: 100%;
+	height: 400px;
+	/*box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caption{
+	width: 100%;
+	height: 120px;
+	margin-top: 1.5em;
+}
+.caption h3{
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+.caption p{
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 1em;
+}
+ .arrow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+}
+.arrow ul{
+	display: flex;
+	gap: 10px;
+}
+
+.arrow ul li{
+	
+	color: black;
+	font-weight: 300;
+	padding: 5px 12px;
+	cursor: pointer;
+}
+.arrow ul li.apply{
+	background-color: black;
+	color: white;
+}
+.about{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.title{
+    margin: 2em;
+    font-weight: lighter;
+}
+
+.about_banner{
+    max-width: 800px;
+    max-height: 800px;
+    margin: 10px auto;
+}
+
+ .about_banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.caption1{
+	width: 100%;
+	height: 40px;
+	margin-top: 30px;
+}
+.caption1 h3{
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+.caption1 p {
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 1em;
+}
+
+
+.about p{
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin-top: 20px;
+    color: gray;
+}
+.about em{
+	color: gray;
+}
+.caption2 h3{
+	text-align: left;
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+.caption2 h3 a{
+	color: black;
+
+}
+.caption2 p{
+	text-align: left;
+	font-size: 0.9rem;
+	margin-top: 1em;
+}
+
+
+footer{
+    width: 100%;
+    padding: 2em 0;
+    padding-top: 70px;
+    display: flex;
+}
+footer div{
+    max-width: 33%;
+}
+
+
+footer h1{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.change{
+	text-align: left;
+	font-size: 0.9rem;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+footer .footer{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+ .footer a{
+    color: black;
+    margin-top: 10px;
+   
+}
+
+footer .footer a span{
+    text-decoration: underline;
+    line-height: 1em;
+}
+
+footer .footer a span:hover{
+    color: red;
+}
+
+footer .blog_post{
+    width: 100%;
+    margin-right: 10px;
+}
+
+footer .blog_post .each_blog{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    border-bottom: 1px solid lightgray;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 1em;
+}
+
+footer .blog_post .each_blog img{
+    width: 75px;
+    height: 75px;
+}
+
+
+
+
+footer .blog_post .each_blog .caption2{
+    max-width: 200px;
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+footer .blog_post .each_blog:first-child{
+    padding-bottom: 20px;
+}
+
+footer .blog_post .each_blog::after{
+    clear: both;
+}
+
+footer .posts{
+    clear: both;
+}
+
+footer .posts .each_post{
+    float: left;
+    padding:5px 8px;
+    background-color: #757575;
+    color: white;
+    margin: .5em .2em;
+    font-size: 11px;
+}
+
+footer .posts .active{
+    background-color: black;
+}
+@media only screen and (max-width:600px) {
+    body{
+        font-size: 14px;
+    }
+
+    .container{
+        width: 78%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav{
+        width: 70%
+    }
+
+    .gallery .img_gallery{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    
+    footer >div{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:399px) {
+    .container{
+        width: 95%;
+    }
+}
